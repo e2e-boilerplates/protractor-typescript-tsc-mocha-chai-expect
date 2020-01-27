@@ -1,7 +1,7 @@
 {
-  "name": "protractor-typescript-tsc-jasmine-expect",
+  "name": "protractor-typescript-tsc-mocha-chai",
   "version": "1.0.0",
-  "description": "Protractor end-to-end test automation boilerplate, using TypeScript, tsc, Jasmine, and Expect",
+  "description": "Protractor end-to-end test automation boilerplate, using TypeScript, tsc, Mocha, and Chai",
   "scripts": {
     "pretty": "npx prettier --no-config './spec/*.ts' --write",
     "lint": "npx tslint -c tslint.json './spec/*.ts'",
@@ -23,11 +23,15 @@
   "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
   "license": "MIT",
   "devDependencies": {
+    "@types/chai": "^4.2.7",
     "@types/jasmine": "3.5.1",
     "@types/jasminewd2": "2.0.8",
+    "@types/mocha": "^5.2.7",
     "@types/node": "12.12.25",
+    "chai": "4.2.0",
     "husky": "4.2.1",
     "lint-staged": "10.0.2",
+    "mocha": "7.0.1",
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
     "protractor": "5.4.2",

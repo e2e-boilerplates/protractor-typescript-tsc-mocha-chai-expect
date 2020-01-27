@@ -1,13 +1,17 @@
-import { Config } from "protractor";
+import { browser, Config } from "protractor";
 export let config: Config = {
   capabilities: {
     browserName: "chrome"
   },
   directConnect: true,
-  framework: "jasmine",
-  jasmineNodeOpts: {
-    isVerbose: true,
-    realtimeFailure: true
+  framework: "mocha",
+  mochaOpts: {
+    reporter: "dot",
+    slow: 3000
   },
-  specs: ["spec/*.spec.js"]
+  specs: ["spec/*.spec.js"],
+  // tslint:disable-next-line:object-literal-sort-keys
+  onPrepare: async () => {
+    await browser.waitForAngularEnabled(false);
+  }
 };

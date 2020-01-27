@@ -1,9 +1,12 @@
+import { expect } from "chai";
+import { before } from "mocha";
 import { browser, by, element } from "protractor";
 
 const url: string = "https://e2e-boilerplates.github.io/sandbox/";
 
 describe("Sandbox", () => {
-  beforeAll(() => {
+  before(function fn() {
+    this.timeout(20000);
     browser.get(url);
   });
 
@@ -11,7 +14,7 @@ describe("Sandbox", () => {
     const title = await browser.getTitle();
     const header = element(by.css("h1"));
 
-    expect(title).toEqual("Sandbox");
-    expect(await header.getText()).toEqual("Sandbox");
+    expect(title).to.equal("Sandbox");
+    expect(await header.getText()).to.equal("Sandbox");
   });
 });
