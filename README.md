@@ -1,8 +1,8 @@
 # Protractor: (TypeScript, tsc, Mocha and Chai)
 
-[![GitHub Actions status | e2e-boilerplates/protractor-typescript-tsc-mocha-chai](https://github.com/e2e-boilerplates/protractor-typescript-tsc-jasmine-expect/workflows/protractor-typescript-tsc-jasmine-expect/badge.svg)](https://github.com/e2e-boilerplates/protractor-typescript-tsc-mocha-chai/actions?workflow=protractor-typescript-tsc-mocha-chai)
+[![GitHub Actions status | e2e-boilerplates/protractor-typescript-tsc-mocha-chai](https://github.com/e2e-boilerplates/protractor-typescript-tsc-mocha-chai/workflows/protractor-typescript-tsc-mocha-chai/badge.svg)](https://github.com/e2e-boilerplates/protractor-typescript-tsc-mocha-chai/actions?workflow=protractor-typescript-tsc-mocha-chai)
 
-Protractor end-to-end test automation boilerplate, using: TypeScript, tsc, Jasmine and Expect.
+Protractor end-to-end test automation boilerplate, using: TypeScript, tsc, Mocha and Chai.
 
 ## Getting Started
 
