@@ -1,13 +1,13 @@
-# Protractor: (TypeScript, tsc, Mocha and Chai)
+# Protractor: (TypeScript, tsc, Mocha, Chai and Expect)
 
 [![GitHub Actions status | e2e-boilerplates/protractor-typescript-tsc-mocha-chai](https://github.com/e2e-boilerplates/protractor-typescript-tsc-mocha-chai/workflows/protractor-typescript-tsc-mocha-chai/badge.svg)](https://github.com/e2e-boilerplates/protractor-typescript-tsc-mocha-chai/actions?workflow=protractor-typescript-tsc-mocha-chai)
 
-Protractor end-to-end test automation boilerplate, using: TypeScript, tsc, Mocha and Chai.
+Protractor end-to-end test automation boilerplate, using: TypeScript, tsc, Mocha, Chai and Expect.
 
 ## Getting Started
 
-    git clone git@github.com:e2e-boilerplates/protractor-typescript-tsc-mocha-chai.git
-    cd protractor-typescript-tsc-mocha-chai
+    git clone git@github.com:e2e-boilerplates/protractor-typescript-tsc-mocha-chai-expect.git
+    cd protractor-typescript-tsc-mocha-chai-expect
     npm install
     npm run upadte-webderiver
     npm run build

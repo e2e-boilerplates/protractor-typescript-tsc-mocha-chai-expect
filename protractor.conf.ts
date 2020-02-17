@@ -1,17 +1,41 @@
 import { browser, Config } from "protractor";
-export let config: Config = {
+
+const directConnect = true;
+const specs = ["spec/*.spec.js"];
+const framework = "mocha";
+const mochaOpts = {
+  reporter: "dot",
+  slow: 3000
+};
+const onPrepare = () => {
+  browser.waitForAngularEnabled(false);
+};
+
+const headed = {
   capabilities: {
     browserName: "chrome"
   },
-  directConnect: true,
-  framework: "mocha",
-  mochaOpts: {
-    reporter: "dot",
-    slow: 3000
-  },
-  specs: ["spec/*.spec.js"],
-  // tslint:disable-next-line:object-literal-sort-keys
-  onPrepare: async () => {
-    await browser.waitForAngularEnabled(false);
-  }
+  directConnect,
+  framework,
+  mochaOpts,
+  onPrepare,
+  specs
 };
+
+const headless = {
+  capabilities: {
+    browserName: "chrome",
+    chromeOptions: {
+      args: ["--headless", "--no-sandbox", "--disable-gpu"]
+    }
+  },
+  directConnect,
+  framework,
+  mochaOpts,
+  onPrepare,
+  specs
+};
+
+const config: Config = process.env.GITHUB_ACTIONS ? headless : headed;
+
+export { config };

@@ -2,12 +2,10 @@ import { expect } from "chai";
 import { before } from "mocha";
 import { browser, by, element } from "protractor";
 
-const url: string = "https://e2e-boilerplates.github.io/sandbox/";
-
 describe("Sandbox", () => {
   before(function fn() {
     this.timeout(20000);
-    browser.get(url);
+    browser.get("https://e2e-boilerplates.github.io/sandbox/");
   });
 
   it("should be on Sandbox", async () => {
