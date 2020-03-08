@@ -4,9 +4,9 @@ const directConnect = true;
 const specs = ["spec/*.spec.js"];
 const framework = "mocha";
 const mochaOpts = {
-  reporter: "dot",
-  slow: 3000
+  reporter: "dot"
 };
+
 const onPrepare = () => {
   browser.waitForAngularEnabled(false);
 };
