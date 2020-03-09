@@ -6,9 +6,9 @@ Protractor end-to-end test automation boilerplate, using TypeScript, Tsc, Mocha,
 
 ## Getting Started
 
-git clone git@github.com:e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect.git
-cd protractor-typescript-tsc-mocha-chai-expect
-npm install
-npm run build
-npm run update-webdriver
-npm run test
+    	git clone git@github.com:e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect.git
+    	cd protractor-typescript-tsc-mocha-chai-expect
+    	npm install
+    	npm run build
+    	npm run update-webdriver
+    	npm run test
