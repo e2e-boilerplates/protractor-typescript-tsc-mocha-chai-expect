@@ -39,8 +39,7 @@
   "license": "MIT",
   "lint-staged": {
     "*.{ts,js,css,json,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "name": "protractor-typescript-tsc-mocha-chai-expect",
