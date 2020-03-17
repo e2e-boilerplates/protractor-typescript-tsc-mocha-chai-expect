@@ -1,4 +1,4 @@
-[![GitHub Actions status | e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect](https://github.com/e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect/workflows/protractor-typescript-tsc-mocha-chai-expect/badge.svg)](https://github.com/e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect/actions?workflow=protractor-typescript-tsc-mocha-chai-expect)
+[![GitHub Actions status | e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect](https://github.com/e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect/workflows/protractor-typescript-tsc-mocha-chai-expect/badge.svg)](https://github.com/e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect/actions?workflow=protractor-typescript-tsc-mocha-chai-expect) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Protractor Boilerplate
 
@@ -6,9 +6,14 @@ Protractor end-to-end test automation boilerplate, using TypeScript, Tsc, Mocha,
 
 ## Getting Started
 
-    	git clone git@github.com:e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect.git
-    	cd protractor-typescript-tsc-mocha-chai-expect
-    	npm install
-    	npm run build
-    	npm run update-webdriver
-    	npm run test
+1. git clone git@github.com:e2e-boilerplate/protractor-typescript-tsc-mocha-chai-expect.git
+
+2. cd protractor-typescript-tsc-mocha-chai-expect
+
+3. npm install
+
+4. npm run build
+
+5. npm run update-webdriver
+
+6. npm run test
