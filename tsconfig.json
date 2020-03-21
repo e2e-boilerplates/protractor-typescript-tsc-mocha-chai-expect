@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
     "strict": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": ["node", "mocha", "chai"],
     "typeRoots": ["node_modules/@types"],
-    "esModuleInterop": true,
     "outDir": "build",
-    "skipLibCheck": true // TODO remove
+    "target": "es5"
   }
 }
