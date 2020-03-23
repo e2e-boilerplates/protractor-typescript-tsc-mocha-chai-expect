@@ -58,7 +58,7 @@
     "lint": "npx tslint -c tslint.json './spec/*.ts'",
     "pretty": "npx prettier --no-config './spec/*.ts' --write",
     "test": "npx protractor ./build/protractor.conf.js",
-    "update-webdriver": "npx webdriver-manager"
+    "update-webdriver": "npx webdriver-manager update"
   },
   "version": "1.0.0"
 }
