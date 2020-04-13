@@ -4,7 +4,8 @@ const directConnect = true;
 const specs = ["spec/*.spec.js"];
 const framework = "mocha";
 const mochaOpts = {
-  reporter: "dot"
+  reporter: "dot",
+  timeout: 50000,
 };
 
 const onPrepare = () => {
