@@ -1,8 +1,9 @@
 import { browser, Config } from "protractor";
-
+      
 const directConnect = true;
-const specs = ["spec/*.spec.js"];
+const specs = ["spec/*.spec.ts"];
 const framework = "mocha";
+
 const mochaOpts = {
   reporter: "dot",
   timeout: 50000,
@@ -13,30 +14,30 @@ const onPrepare = () => {
 };
 
 const headed = {
-  capabilities: {
-    browserName: "chrome"
-  },
   directConnect,
+  specs,
+  capabilities: {
+    browserName: "chrome",
+  },
   framework,
   mochaOpts,
-  onPrepare,
-  specs
+  onPrepare
 };
 
 const headless = {
+  directConnect,
+  specs,
   capabilities: {
     browserName: "chrome",
-    chromeOptions: {
-      args: ["--headless", "--no-sandbox", "--disable-gpu"]
-    }
+      chromeOptions: {
+        args: ["--headless", "--no-sandbox", "--disable-gpu"],
+      },
   },
-  directConnect,
   framework,
   mochaOpts,
-  onPrepare,
-  specs
+  onPrepare
 };
 
-const config: Config = process.env.GITHUB_ACTIONS ? headless : headed;
-
+const config: Config = process.env.GITHUB_ACTIONS ? headless : headed;  
+            
 export { config };
