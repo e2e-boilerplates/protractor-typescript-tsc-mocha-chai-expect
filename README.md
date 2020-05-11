@@ -2,7 +2,7 @@
     
 # Protractor Boilerplate
     
-Protractor end-to-end test automation boilerplate, Using TypeScript, Tsc, Mocha, Chai and Expect.
+Protractor end-to-end test automation boilerplate, Using [TypeScript](https://www.typescriptlang.org), tsc, [Mocha](https://mochajs.org), [Chai](https://www.chaijs.com) and Expect.
     
 ## Getting Started
     
